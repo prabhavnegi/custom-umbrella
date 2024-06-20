@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.background {
+    height: 100vh;
+    display: flex;
+    background-color: #cdf2ff;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .img-div {
+    width: 60%;
+    position: relative;
+}
+
+.left .img-div img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h1 {
+    font-size: 5rem;
+    margin: 10px 0;
+}
+
+.right .color-panel {
+    display: flex;
+    width: 50%;
+    margin: 10px 0;
+    padding: 1rem 0;
+}
+
+.right .color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 2px #0000001a;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.right .color:nth-child(1):hover {
+    box-shadow: 0 0 10px #80dcfd;
+}
+
+.right .color:nth-child(2):hover {
+    box-shadow: 0 0 10px #ff6fbc;
+}
+
+.right .color:nth-child(3):hover {
+    box-shadow: 0 0 10px #ffe58e;
+}
+
+
+.right .description {
+    margin: 10px 0;
+}
+
+.right .desc1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.right .desc2 {
+    font-size: 1.2rem;
+}
+
+.right .desc3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.upload-button button {
+    position: relative;
+    width: 55%;
+    height: 3.5rem;
+    padding: 10px 20px;
+    background-color: #30B4E5;
+    border: none;
+    cursor: pointer;
+    
+}
+.upload-button .upload-text {
+    color: #fff; /* Example text color */
+    font-size: 22px; /* Example font size */
+}
+
+.upload-input {
+    display: none;
+}
+
+.right .upload-logo {
+    position: absolute;
+    left: 0;
+    top: 15;
+    margin-left: 15px;
+}
+
+.logo {
+    position: absolute;
+    width: 10%;
+    bottom: 10%;
+    right: 45%
+}  
+
+.logo .logo-img {
+    display: none;
+    max-width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.loader {
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+.loader img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    width: 10%;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mini-loader {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 11;
+    margin-left: 15px;
+    fill: #fff;
+    animation: rotate 2s linear infinite;
+}
+
+.cross {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 15;
+    margin-right: 15px;
+    width: 25px;
+}
